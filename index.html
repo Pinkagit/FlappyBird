@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flappy Bird</title>
+	<style type="text/css">
+		div{
+			width: 500px;
+			height: 500px;
+			margin:0 auto;
+		}
+		img{
+			width: 300px;
+			height: 100px;
+			position: absolute;
+			left:50%;
+			top:17%;
+			transform: translateX(-50%);
+			animation: logo 1s infinite;
+		}
+		@keyframes logo{
+			0%{top:17%;}
+			50%{top:13%;}
+			100%{top:17%;}
+		}
+	</style>
+</head>
+<body>
+	<img src="img/logo.gif">
+	<div>
+		<canvas id="canvas" width="500" height="500" style="border:2px solid #000;background:#fff;"></canvas>
+	</div>
+	
+	<script src="bird.js" type="text/javascript"></script>
+</body>
+</html>
